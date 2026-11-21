@@ -1,0 +1,355 @@
+/* ==========================================
+   IMSS - Estilos personalizados
+   Bootstrap 5.3 se carga desde index.html
+   ========================================== */
+
+:root {
+  --imss-blue: #0066a6;
+  --imss-dark: #004b78;
+  --imss-light: #f4f8fb;
+  --text: #243746;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #f8fafc;
+}
+
+.logo-mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--imss-blue);
+  color: white;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.navbar-brand span {
+  line-height: 1.05;
+}
+
+.hero {
+  min-height: 420px;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: linear-gradient(135deg, #eaf5fb, #ffffff);
+}
+
+.hero-text {
+  max-width: 700px;
+}
+
+.tag {
+  color: var(--imss-blue);
+  font-weight: 800;
+  letter-spacing: .08em;
+  font-size: .82rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin: 12px 0;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #526675;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.hero-card {
+  min-width: 280px;
+  max-width: 360px;
+  padding: 35px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 15px 45px rgba(0, 50, 80, .12);
+  text-align: center;
+}
+
+.hospital-icon {
+  font-size: 4rem;
+  color: var(--imss-blue);
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title.left {
+  text-align: left;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  padding: 28px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #e4edf3;
+  box-shadow: 0 8px 25px rgba(0, 50, 80, .06);
+}
+
+.service-card .icon {
+  font-size: 2.4rem;
+}
+
+.panel-section {
+  padding: 70px 8%;
+  background: #edf5f9;
+}
+
+.form-panel {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  border-radius: 22px;
+  padding: 35px;
+  box-shadow: 0 12px 40px rgba(0, 50, 80, .08);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  margin-top: 7px;
+  padding: 12px 14px;
+  border: 1px solid #cbd8e0;
+  border-radius: 9px;
+  background: white;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--imss-blue);
+  --bs-btn-border-color: var(--imss-blue);
+  --bs-btn-hover-bg: var(--imss-dark);
+  --bs-btn-hover-border-color: var(--imss-dark);
+}
+
+.login-panel,
+.success {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(0, 50, 80, .12);
+}
+
+.login-logo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: var(--imss-blue);
+  color: white;
+  font-weight: 800;
+}
+
+.full {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.close {
+  float: right;
+  border: 0;
+  background: transparent;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.check {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background: #dff6e8;
+  color: #198754;
+  font-size: 2rem;
+}
+
+.folio {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f1f5f8;
+}
+
+footer {
+  padding: 35px 8%;
+  background: #083b5c;
+  color: white;
+}
+
+footer a {
+  color: white;
+  margin-right: 18px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 6%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .form-panel {
+    padding: 22px;
+  }
+}
+
+.imss-modal-header {
+  background: linear-gradient(135deg, var(--imss-blue), var(--imss-dark));
+  padding: 20px 24px;
+}
+
+.imss-modal-form label {
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.imss-modal-form input,
+.imss-modal-form select,
+.imss-modal-form textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #cbd8e0;
+  border-radius: 9px;
+  background: #ffffff;
+  color: var(--text);
+}
+
+.imss-modal-form input:focus,
+.imss-modal-form select:focus,
+.imss-modal-form textarea:focus {
+  outline: none;
+  border-color: var(--imss-blue);
+  box-shadow: 0 0 0 3px rgba(0, 102, 166, 0.15);
+}
+
+.detalle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.detalle-item {
+  background: #ffffff;
+  border: 1px solid #e1ebf1;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.detalle-item.full-span {
+  grid-column: 1 / -1;
+}
+
+.detalle-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #526675;
+  text-transform: uppercase;
+}
+
+.detalle-valor {
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+@media (max-width: 576px) {
+  .detalle-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tarjetas que explican las tecnologías del Front-End */
+.tech-card { border: 1px solid #e1ebf1; border-radius: 16px; transition: transform .2s ease, box-shadow .2s ease; }
+.tech-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,50,80,.10); }
+.tech-icon { font-size: 2.4rem; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #ffbf47; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
